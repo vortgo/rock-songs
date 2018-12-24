@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>{{$text ?? 'Search'}} | Rock-songs.online</title>
+    <meta name="Keywords" content="Rock music, download mp3, download mp3 rok, heavy metal, heavy music">
+    <meta name="description" content="Поиск и скачивание музыки mp3. Скачать рок музыку.">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Thasadith:700" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet"
@@ -68,7 +72,7 @@
     <div class=" container">
         <div class="row">
             <div class="col-md-6 offset-md-3">
-                <h1 class="jumbotron-heading">Search songs</h1>
+                <h1 class="jumbotron-heading">Search Rock Songs Online</h1>
                 <form>
                     <input class="search-field" name="search" value="{{$text ?? ''}}" type="text">
                 </form>
