@@ -38,15 +38,15 @@ class Test extends Command
      */
     public function handle()
     {
-//        $count = Song::count();
-//        $bar = $this->output->createProgressBar($count);
-//
-//        Song::chunk(1000, function($songs) use($bar){
-//            $songs->addToIndex();
-//            $bar->advance(1000);
-//        });
-//
-//        $bar->finish();
+        $count = Song::count();
+        $bar = $this->output->createProgressBar($count);
+
+        Song::chunk(1000, function ($songs) use ($bar) {
+            $songs->addToIndex();
+            $bar->advance(1000);
+        });
+
+        $bar->finish();
 
     }
 }
