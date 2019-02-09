@@ -38,15 +38,10 @@ class Test extends Command
      */
     public function handle()
     {
-        $count = Song::count();
-        $bar = $this->output->createProgressBar($count);
+        $band = 'Amorphis';
+        $song = Song::where('name', 'Sampo')->first();
 
-        Song::chunk(1000, function ($songs) use ($bar) {
-            $songs->addToIndex();
-            $bar->advance(1000);
-        });
-
-        $bar->finish();
+        dd($song->album->id, $song->album->band->name);
 
     }
 }
