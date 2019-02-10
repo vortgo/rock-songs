@@ -12,3 +12,4 @@
 */
 
 Route::get('/', ['as' => 'index', 'uses' => 'SearchController@searchPage']);
+Route::get('/policy', ['as' => 'index', 'uses' => 'GeneralController@policy']);
